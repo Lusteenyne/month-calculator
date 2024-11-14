@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap-5.3.3-dist/js/bootstrap.bundle.js">
+    <title>Month</title>
+</head>
+
+<body>
+    <main class="w-25 mx-auto shadow rounded p-3 bg-primary">
+        <h1> Number of days in a given month</h1>
+        <input class="form-control mt-4 month" type="text" name="" id="month" placeholder="Enter Month Here">
+        <button class="btn btn-danger mt-4" onclick="myMonth()">Check Days</button>
+        <p class="mt-4 text-success bg-white" id="display"></p>
+        <div class=" mt-4 " id="display"></div>
+    </main>
+</body>
+
+</html>
+<script>
+    function myMonth() {
+        let year = document.getElementById("month").value.trim()
+        let yearinput = year.toLowerCase()
+        let reply = document.getElementById("display")
+        switch (yearinput) {
+            case "january":
+                reply.innerHTML = `<p> January has 31 Days </p>`
+                console.log("31 Days");
+                alert("There are 31 days in this Month");
+                break;
+
+            case "february":
+                reply.innerHTML = `<p> February has 28 Days or 29 Days in a leap year </p>`
+                console.log("28 Days or 29 Days in leap year");
+                alert("There are 28 days in this Month and 29 days in a leap year");
+                break;
+            case "march":
+                reply.innerHTML = `<p> March has 31 Days </p>`
+                console.log("31 Days");
+                alert("There are 31 days in this Month");
+                break;
+            case "april":
+                reply.innerHTML = `<p> April has 30 Days </p>`
+                console.log("30 Days");
+                alert("There are 30 days in this Month");
+                break;
+            case "may":
+                reply.innerHTML = `<p> May has 31 Days </p>`
+                console.log("31 Days");
+                alert("There are 31 days in this Month");
+                break;
+            case "june":
+                reply.innerHTML = `<p> June has 30 Days </p>`
+                console.log("30 Days");
+                alert("There are 30 days in this Month");
+                break;
+            case "july":
+                reply.innerHTML = `<p> July has 31 Days </p>`
+                console.log("31 Days");
+                alert("There are 31 days in this Month");
+                break;
+            case "august":
+                reply.innerHTML = `<p> August has 31 Days </p>`
+                console.log("31 Days");
+                alert("There are 31 days in this Month");
+                break;
+            case "september":
+                reply.innerHTML = `<p> September has 30 Days </p>`
+                console.log("30 Days");
+                alert("There are 30 days in this Month");
+                break;
+            case "october":
+                reply.innerHTML = `<p> October has 30 Days </p>`
+                console.log("30 Days");
+                alert("There are 30 days in this Month");
+                break;
+            case "november":
+                reply.innerHTML = `<p> November has 30 Days </p>`
+                console.log("30 Days");
+                alert("There are 30 days in this Month");
+                break;
+            case "december":
+                reply.innerHTML = `<p> December has 31 Days </p>`
+                console.log("31 Days");
+                alert("There are 31 days in this Month");
+                break;
+
+            default:
+                reply.innerHTML = `<p> This is an Invalid Month </p>`
+                console.log("Invalid Month");
+                alert("This is an Invalid Month");
+                break;
+        }
+
+    }
+
+</script>
